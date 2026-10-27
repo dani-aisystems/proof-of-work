@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+
+# Personal learner profile (pre-fills your own build; never committed)
+src/profile.local.js
+private/

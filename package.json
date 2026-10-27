@@ -1,0 +1,10 @@
+{
+  "name": "proof-of-work",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A personal AI engineering academy: Claude Code mastery, HTTP precision, evidence-based skill tracking.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  }
+}
