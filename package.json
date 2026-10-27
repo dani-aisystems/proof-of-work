@@ -5,7 +5,9 @@
   "description": "A personal AI engineering academy: Claude Code mastery, HTTP precision, evidence-based skill tracking.",
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs"
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "check": "npm test && npm run build && git diff --exit-code -- dist"
   },
   "license": "MIT",
   "author": "Daniel Yanchev",

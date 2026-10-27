@@ -103,6 +103,15 @@ docs/                        screenshots
 
 **Adding a lesson:** add an entry to `LESSONS` in `src/content.js`, list its id in a module's `lessons` array in `MODULES`, then run `npm run build`. The lesson automatically gets the stepper, the test flow, spaced review and the skill map.
 
+## Checks
+
+```bash
+npm test       # curriculum links, skills, modules, lessons, resources and quizzes
+npm run check  # integrity test + rebuild + confirms committed dist/ is current
+```
+
+The integrity test catches broken content references and stale built files. It does not assess teaching quality, factual accuracy, browser behaviour or accessibility; those still need review in the rendered product.
+
 ## Design decisions
 
 - **No framework.** It's one HTML file with vanilla JS, so it can be published as a Claude artifact, opened from disk, or deployed anywhere with no build tooling.
